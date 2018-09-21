@@ -1,9 +1,14 @@
-# skref 1: segja notenda frá hreyfingarmöguleikum.
-# skref 2: taka inn 'n', 's', 'e' eða 'w' og færa leikmann.
-# skref 3: ef leikmaður slær inn ógilda átt skal prenta út viðeigandi skilaboð og leyfa leikmanni að slá aftur inn átt.
-# skref 4: gera while lykkju sem fer í gegnum if setningar þar sem while greinir hvaða reit leikmaður er á.
-# skref 5: reikna nýja stöðu leikmanns
-# skref 6: þegar leikmaður hefur komist á endareit þá prentum við út Victory! og lokum prógramminu.
+#gera föll fyrir hvern reit sem prentar út leiðbeiningarnar
+#og biður um input um "direction" frá notendanum sem síðan
+#fer í gegnum while lykkju sem inniheldur if og elif þar sem hann breytir
+#staðfestingu leikmannsins í leiknum ef passar við annars fer hann í gegnum else
+#setningu þar semhann prentar viðeigandi setningar og skilar leikmanni aftur í while lykkjuna og og hún runnar þartil
+#hún fær viðeigandi gildi og svo koll af kolli.
+#þegar leikmaður er kominn á reit 3 þá prentar forritið "Victory!" setninguna og while lykkjan stoppar
+
+#1. mér fannst falla forritið einfaldlega einfaldara í uppsetningu og því fannst mér það þægilegra og skiljanlegra.
+#2. Forritið sem inniheldur föll er mun skiljanlegra og lesanlegra.
+#3. ég gat búið til fall fyrir hvern reit sem einfaldar mjög skilninginn á forritinu
 
 position = 1
 
@@ -29,7 +34,6 @@ while position != 3:
         print("(N)orth.")
         new_position = input("Direction: ")
         while True:
-
             if new_position.upper() == "N":
                 position = 4
                 break
